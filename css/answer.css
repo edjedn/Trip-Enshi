@@ -1,0 +1,427 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        background-image: url(../image/R-C13.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    /*  body header {
+        background-image: url(../image/R-C8.png);
+    } */
+    
+    #body-top {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        height: 60px;
+        width: 100%;
+        /*   background-color: rgba(255, 255, 255, 0.3); */
+        box-shadow: 0 8px 8px rgba(4, 60, 41, .6);
+        z-index: 999;
+        background-image: url(../image/R-C13.jpg);
+        background-size: 100%;
+        background-position-y: -90px;
+        background-repeat: repeat-y;
+    }
+    
+    #body-top .top {
+        width: 900px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    #top-ul-left {
+        float: left;
+        width: 240px;
+        height: 100%;
+        opacity: 1;
+    }
+    
+    #top-ul-left li {
+        width: 80px;
+        height: 100%;
+        float: left;
+        list-style: none;
+    }
+    
+    #top-ul-left li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 60px;
+        transition: all 0.5s;
+    }
+    
+    #top-ul-left li:nth-child(1) a {
+        text-align: left;
+    }
+    
+    #top-ul-right {
+        width: 230px;
+        height: 100%;
+        opacity: 1;
+        float: right;
+    }
+    
+    #top-ul-right li {
+        width: 115px;
+        height: 60px;
+        float: left;
+        list-style: none;
+    }
+    
+    #top-ul-right li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 60px;
+        transition: all 0.5s;
+    }
+    
+    #top-ul-right li:nth-child(2) a {
+        text-align: right;
+    }
+    
+    #body {
+        width: 900px;
+        /* height: 900px; */
+        margin: 160px auto 0;
+    }
+    
+    #body-left {
+        width: 605px;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #search-box {
+        width: 600px;
+        height: 54px;
+        float: left;
+    }
+    
+    #search-box>textarea {
+        width: 500px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+        resize: none;
+        outline: none;
+        border: 1px solid #000;
+        overflow: hidden;
+        text-indent: 1em;
+        border-radius: 5px;
+    }
+    
+    #search-box>input {
+        font-size: 16px;
+        height: 46px;
+        width: 80px;
+        float: right;
+        text-align: center;
+        border-radius: 5px;
+        border: 0;
+        background: #000;
+        color: white;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    #search-box>input:hover {
+        background-color: rgba(4, 60, 41, .6);
+        color: #000;
+    }
+    
+    #remenwenti {
+        margin-top: 60px;
+        width: 605px;
+        height: 32px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    #remenwenti>ul {
+        list-style: none;
+    }
+    
+    #remenwenti>ul>li {
+        margin-right: 10px;
+        width: 100px;
+        height: 32px;
+        float: left;
+        line-height: 32px;
+        text-align: center;
+    }
+    
+    .change {
+        background: rgba(4, 60, 41, .6);
+    }
+    
+    #remenwenti>ul>li>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        color: #2b2b2b;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+    
+    #remenwenti>ul>li>a:hover {
+        background-color: rgba(4, 60, 41, .6);
+        color: #fff;
+    }
+    
+    .search-area {
+        height: 40px;
+        width: 40px;
+        margin-top: 54px;
+        margin-left: 12px;
+        display: none;
+        transition: all 0.5s;
+    }
+    
+    .all {
+        color: #2b2b2b;
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 40px;
+        text-decoration: none;
+        display: inline;
+    }
+    
+    .search-area p {
+        height: 30px;
+        line-height: 24px;
+        text-indent: 1em;
+    }
+    
+    #body-right {
+        width: 200px;
+        height: 800px;
+        float: right;
+    }
+    
+    #body-right>a>button {
+        width: 200px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 16px;
+        background: #000;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        transition: all 0.5s;
+    }
+    
+    #body-right>a>button:hover {
+        background-color: rgba(4, 60, 41, .6);
+        color: #000;
+    }
+    
+    #slide-img {
+        width: 200px;
+        height: 123px;
+    }
+    
+    #Img {
+        margin-top: 20px;
+        overflow: hidden;
+        float: left;
+        list-style: none;
+    }
+    
+    #Img>li>img {
+        height: 123px;
+        width: 200px;
+        background-repeat: no-repeat;
+    }
+    
+    #slide-img-down {
+        height: 4px;
+        width: 200px;
+        margin-top: 20px;
+    }
+    
+    #slide-img-down>span {
+        width: 66px;
+        height: 4px;
+        margin-right: 1px;
+        background: #000;
+    }
+    
+    #join {
+        width: 200px;
+        height: 46px;
+        line-height: 46px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 10px;
+        text-align: center;
+        background: rgba(4, 60, 41, .6);
+    }
+    
+    #wenda {
+        width: 200px;
+        height: 146px;
+    }
+    
+    #wenda>span>img {
+        width: 13px;
+        height: 13px;
+    }
+    
+    #wenda>p {
+        font-size: 10px;
+    }
+    
+    #wenda>hr {
+        height: 2px;
+        margin-top: 10px;
+        background: #000;
+        border: none;
+    }
+    
+    .label {
+        width: 200px;
+        height: 10px;
+        font-size: 10px;
+    }
+    
+    #news-box {
+        list-style: none;
+    }
+    
+    #news-box li {
+        position: relative;
+        top: 0;
+        padding: 0 15px;
+        margin: 30px 0;
+        margin-left: -5px;
+        height: 280px;
+        background-color: rgba(255, 255, 255, 0.6);
+        transition: all 0.3s;
+    }
+    
+    #news-box li:nth-child(1) {
+        margin-top: 15px;
+    }
+    
+    #news-box li .title {
+        width: 100%;
+        height: 35px;
+    }
+    
+    .title>a {
+        display: block;
+        padding: 0 5px;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .userTxt {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .avatar {
+        width: 50px;
+        height: 50px;
+        float: left;
+    }
+    
+    .avatar>a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    
+    .avatar a img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .user-info>a {
+        display: block;
+        margin-left: 70px;
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        line-height: 60px;
+    }
+    
+    .desc.clearfix {
+        width: 100%;
+        margin-top: 5px;
+        height: 140px;
+    }
+    
+    .desc.clearfix>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    
+    .desc.clearfix .neirong {
+        height: 140px;
+        float: left;
+    }
+    
+    .neirong img {
+        margin: 0 10px 0 5px;
+        height: 140px;
+    }
+    
+    .desc.clearfix p {
+        font-size: 12px;
+        color: #000;
+        overflow: hidden;
+    }
+    
+    .cate-share {
+        width: 100%;
+        height: 20px;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+    
+    .reply,
+    .date,
+    .share {
+        margin-right: 10px;
+        float: right;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .share {
+        margin-right: 0px;
+    }
+    
+    ._mCS_1 .mCSB_scrollTools .mCSB_dragger_bar {
+        width: 8px;
+    }

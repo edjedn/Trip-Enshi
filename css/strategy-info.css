@@ -1,0 +1,256 @@
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        /*  body {
+            background-image: url(../image/R-C13.jpg);
+            background-size: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+         */
+        
+        body header {
+            background-color: rgba(255, 255, 255, 0.1);
+            background-image: none;
+        }
+        
+        @font-face {
+            font-family: 'icomoon';
+            src: url('../fonts/icomoon.eot?utumjj');
+            src: url('../fonts/icomoon.eot?utumjj#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?utumjj') format('truetype'), url('../fonts/icomoon.woff?utumjj') format('woff'), url('../fonts/icomoon.svg?utumjj#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+            /*    border-bottom: 1px solid #000; */
+        }
+        
+        .x {
+            width: 1050px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            height: 100px;
+            /* background-color: pink; */
+            line-height: 100px;
+        }
+        
+        .header a img {
+            margin-top: -15px;
+            height: 150px;
+            width: 200px;
+        }
+        
+        .header a {
+            height: 50px;
+            float: left;
+            margin-right: 20px;
+            color: black;
+        }
+        
+        .header .ip-right {
+            float: right;
+        }
+        
+        .header .ip-right a {
+            display: block;
+            border: #fff;
+        }
+        
+        .header .ip-right a:hover {
+            color: #ff9d00;
+        }
+        
+        .header #ip span {
+            margin-right: 10px;
+            color: rgb(56, 48, 48);
+            font-family: 'icomoon';
+        }
+        
+        .header .right {
+            margin-right: 50px;
+            float: right;
+        }
+        
+        .header .right a span {
+            margin-right: 20px;
+            font-family: 'icomoon';
+            color: #ff9d00;
+        }
+        
+        .title {
+            height: 80px;
+            /* background-color: pink; */
+            /* border-bottom: 1px solid rgb(226, 226, 226); */
+        }
+        
+        .title .title_1 {
+            float: left;
+            width: 400px;
+            padding-top: 10px;
+            margin-left: 75px;
+        }
+        
+        .title .title_1 h1 {
+            font-weight: 700;
+        }
+        
+        .title .title_1 p {
+            color: rgb(0, 0, 0);
+        }
+        
+        .title .title_2 {
+            height: 10px;
+            line-height: 85px;
+            float: right;
+            margin-right: 50px;
+        }
+        
+        .title .title_2 a {
+            color: black;
+        }
+        
+        .title .title_2 p {
+            margin-left: 10px;
+            float: left;
+        }
+        
+        .title .title_2 span {
+            color: #aaa;
+            float: left;
+            font-family: 'icomoon';
+        }
+        
+        .title .title_2 span:hover {
+            color: #ff9d00;
+        }
+        
+        .top {
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .top_l h3 {
+            float: left;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        
+        .top_l :last-child {
+            margin-left: 50px;
+        }
+        
+        .pic {
+            clear: both;
+            height: 370px;
+            width: 100%;
+        }
+        
+        .pic .box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .pic .box .box_l img {
+            float: left;
+        }
+        
+        .pic .box .box_r img {
+            float: right;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .info .box {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, .8);
+        }
+        
+        .info .box .info_t {
+            padding-bottom: 15px;
+        }
+        
+        .info .box .info_t p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        .info .box .info_t li {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        .info .box dl {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        
+        .info .box dl dt {
+            font-size: 20px;
+            padding-bottom: 8px;
+            color: #000;
+            font-weight: 800;
+        }
+        
+        .info .box dl dd {
+            font-size: 16px;
+            padding-bottom: 8px;
+            color: #000;
+        }
+        
+        .hotel .box {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, .8);
+        }
+        
+        .hotel .box h2 {
+            font-weight: normal;
+            font-weight: 700;
+        }
+        
+        .hotel .box .hotel_l {
+            position: relative;
+        }
+        
+        .hotel .box .hotel_l :last-child {
+            margin-left: 20px;
+            margin-bottom: 220px;
+        }
+        
+        .hotel .box .hotel_l span {
+            position: absolute;
+            left: 540px;
+            top: 20px;
+            color: #fff;
+            font-size: 20px;
+            width: 60px;
+            height: 30px;
+            background-color: #4eadf2;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 30px;
+            width: 100%;
+            height: 90px;
+            background-color: #ccc;
+        }

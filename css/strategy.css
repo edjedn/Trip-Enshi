@@ -1,0 +1,313 @@
+    body {
+        background-image: url(../image/R-C13.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    /* body header {
+        background-image: url(../image/R-C8.png);
+    } */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    @font-face {
+        font-family: 'icomoon';
+        src: url('../fonts/icomoon.eot?utumjj');
+        src: url('../fonts/icomoon.eot?utumjj#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?utumjj') format('truetype'), url('../fonts/icomoon.woff?utumjj') format('woff'), url('../fonts/icomoon.svg?utumjj#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+    
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.3);
+        /*  border-top: 1px solid #000; */
+        box-shadow: 0 8px 8px rgba(4, 60, 41, .6);
+    }
+    
+    .x {
+        width: 1040px;
+        margin: 0 auto;
+    }
+    
+    #rt {
+        position: fixed;
+        left: 1260px;
+        bottom: 50px;
+        height: 150px;
+        width: 50px;
+    }
+    
+    #rt>* {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #rt #box1 {
+        background-color: pink;
+    }
+    
+    #rt #box2 {
+        background-color: blueviolet;
+    }
+    
+    #rt #box3 {
+        background-color: red;
+    }
+    
+    .summary {
+        margin-top: 90px;
+        width: 100%;
+        height: 250px;
+        /* background-color: pink; */
+    }
+    
+    .summary .summary_head {
+        text-indent: -4em;
+        line-height: 80px;
+        font-size: 26px;
+        color: #000;
+        font-weight: 700;
+    }
+    
+    .summary p {
+        display: block;
+        height: 120px;
+        width: 100%;
+        text-indent: 2em;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000;
+    }
+    
+    .content {
+        margin-top: 20px;
+        width: 1040px;
+    }
+    
+    .content .info {
+        position: relative;
+        width: 1040px;
+    }
+    
+    .content .info .bangdan {
+        position: fixed;
+        width: 66px;
+        height: 226px;
+        margin-bottom: 25 px;
+        transform: translateX(-76px);
+        background: linear-gradient(to bottom, rgba(4, 60, 41, .6) 50%, rgba(4, 60, 41, .2));
+        border-radius: 6px 6px 0 0;
+    }
+    
+    .content .info .bangdan h2 {
+        width: 100%;
+        height: 226px;
+        font-size: 26px;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    .content .info .bangdan .sanjiao {
+        border: 33px solid rgba(4, 60, 41, .2);
+        border-top-color: 10px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    /* .content .content_top {
+        height: 1600px;
+        background-color: pink;
+    }
+     */
+    
+    .content .content_top .top1 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 340px;
+        width: 1040px;
+        padding: 20px;
+        /*  border-bottom: 1px solid rgba(0, 0, 0, 0.6); */
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 8px rgba(4, 60, 41, .6);
+    }
+    
+    .content .content_top .top1:nth-child(5) {
+        border-bottom: 0px
+    }
+    
+    .content .content_top .top1 .top_left {
+        margin: 10px;
+        width: 40%;
+        /* background-color: blue; */
+        float: left;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    /* .content .content_top .top1 .top_left h3 {
+    height: 20px;
+    line-height: 20px;
+} */
+    
+    .content .content_top .top1 .top_left .num {
+        display: block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 2px;
+        background-color: rgba(4, 60, 41, 1);
+        color: #fff;
+        font-size: 14px;
+        float: left;
+        margin-top: 3px;
+    }
+    
+    .content .content_top .top1 .top_left h3 a {
+        color: rgba(4, 60, 41, 1);
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .content .content_top .top1 .top_left span {
+        font-weight: normal;
+        float: right;
+        font-size: 12px;
+        color: rgba(4, 60, 41, 1);
+        line-height: 30px;
+    }
+    
+    .content .content_top .top1 .top_left p {
+        display: block;
+        float: left;
+        display: table;
+        line-height: 24px;
+        font-size: 16px;
+        margin: 10px 0;
+        color: rgb(49, 49, 49);
+    }
+    
+    .content .content_top .top1 .top_left .baohan {
+        float: left;
+    }
+    
+    .content .content_top .top1 .top_left .baohan a {
+        margin: 0;
+        color: rgb(13, 133, 93);
+        cursor: pointer;
+        line-height: 24px;
+    }
+    /* .content .content_top .top1 .top_right .pic {
+         float: left; 
+    } */
+    
+    .content .content_top .top1 .top_right .pic .pic1 {
+        float: left;
+    }
+    
+    .content .content_top .top1 .top_right .pic .pic2 {
+        float: right;
+    }
+    
+    .content .content_top .top1 .top_right .pic .pic3 {
+        margin-top: 5px;
+        float: right;
+    }
+    
+    .picImgs {
+        margin-top: 30px;
+        width: 1040px;
+        height: 645px;
+    }
+    
+    .picImgs .banner {
+        float: left;
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+    }
+    
+    .picImgs .banner .xia,
+    .picImgs .banner .shang {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(4, 60, 41, 0.8);
+        cursor: pointer;
+        opacity: 1;
+    }
+    
+    .picImgs .banner .xia {
+        opacity: 0.5;
+    }
+    
+    .picImgs .banner .shang {
+        transform: rotateZ(180deg);
+    }
+    
+    .picImgs .banner .shang::after,
+    .picImgs .banner .xia::after {
+        font-family: 'icomoon';
+        content: '\e912';
+        color: #fff;
+        font-size: 32px;
+        margin: auto 109px;
+    }
+    
+    .picImgs .banner .ban {
+        position: relative;
+        width: 100%;
+        height: 545px;
+        padding: 25px;
+        overflow: hidden;
+    }
+    
+    .picImgs .banner ul {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 100%;
+        transition: all 0.5s;
+    }
+    
+    .picImgs .banner ul li {
+        margin: 0 0 25px 0;
+        width: 200px;
+        height: 105px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    
+    .picImgs .banner ul li img {
+        width: 200px;
+    }
+    
+    .picImgs .pic {
+        margin-left: 30px;
+        position: relative;
+        float: right;
+        width: 760px;
+        height: 100%;
+        padding: 25px;
+        background-color: rgba(4, 60, 41, 0.3);
+        transition: all 0.5s;
+    }
+    
+    .picImgs .pic img {
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s;
+    }

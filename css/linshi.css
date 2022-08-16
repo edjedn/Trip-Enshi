@@ -1,0 +1,77 @@
+#bigUl {
+    margin-top: 90px;
+    width: 500%;
+    height: 1700px;
+    position: relative;
+    left: 0;
+    transition: all 1s;
+}
+
+#bigUl>li {
+    position: relative;
+    border-top: 1px solid #000;
+    width: 20%;
+    height: 1700px;
+    float: left;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#bigUl>li:nth-child(1) {
+    background-image: url(../image/R-C2.jpg);
+}
+
+#bigUl>li:nth-child(2) {
+    background-image: url(../image/R-C4.jpg);
+}
+
+#bigUl>li:nth-child(3) {
+    background-image: url(../image/R-C2.jpg);
+}
+
+#bigUl>li:nth-child(4) {
+    background-image: url(../image/R-C4.jpg);
+}
+
+#bigUl>li:nth-child(5) {
+    background-image: url(../image/R-C2.jpg);
+}
+
+.qiehuan2,
+.qiehuan1 {
+    position: fixed;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(4, 60, 41, .8);
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.qiehuan1 {
+    left: 100px;
+    cursor: auto;
+    opacity: 0.5;
+}
+
+.qiehuan2 {
+    right: 100px;
+}
+
+.qiehuan1::after,
+.qiehuan2::after {
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    font-family: 'icomoon';
+    content: '\e90e';
+    font-size: 50px;
+    color: #fff;
+}
+
+.qiehuan2::after {
+    content: "\e90c";
+}

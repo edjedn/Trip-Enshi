@@ -1,0 +1,773 @@
+/* 大盒子做滚动 */
+
+body header {
+    background: linear-gradient(to bottom, rgba(168, 189, 182, 1) 50%, rgba(168, 189, 182, .0));
+    background-image: none;
+}
+
+.bidBody {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bidBody .banner {
+    position: relative;
+    top: 0;
+}
+
+.bidBody .side {
+    position: fixed;
+    top: 50%;
+    right: -100px;
+    width: 100px;
+    height: 360px;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+    z-index: 9;
+}
+
+.bidBody .side ul {
+    position: absolute;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.bidBody .side ul li {
+    position: absolute;
+    left: 0px;
+    margin-bottom: 6px;
+    padding-right: 6px;
+    width: 72px;
+    height: 66px;
+    background-color: #000;
+    border-radius: 6px 0 0 6px;
+    box-shadow: black 0px 0px 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.bidBody .side ul li:nth-child(2) {
+    top: 72px;
+}
+
+.bidBody .side ul li:nth-child(3) {
+    top: 144px;
+}
+
+.bidBody .side ul li:nth-child(4) {
+    top: 216px;
+}
+
+.bidBody .side ul li:nth-child(5) {
+    top: 288px;
+    border-bottom: 0;
+}
+
+.bidBody .side ul li:nth-child(5)::after {
+    font-family: 'icomoon';
+    content: '\e912';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    font-size: 36px;
+    color: #fff;
+    line-height: 66px;
+}
+
+.bidBody .bannnerCon {
+    padding: 5px 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 110px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.bidBody .bannnerCon .bannnerCon-con {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bidBody .bannnerCon .active {
+    background: white !important;
+    width: 15px;
+    height: 15px;
+}
+
+
+/* 导航栏地图页 */
+
+#main #map {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 60%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+
+#main #map #lichuan,
+#main #map #enshi,
+#main #map #xianfeng,
+#main #map #xuanen,
+#main #map #laifeng,
+#main #map #jianshi,
+#main #map #badong,
+#main #map #hefeng {
+    position: absolute;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#main #map #lichuan {
+    width: 17.4%;
+    height: 32%;
+    top: 37%;
+    left: 25%;
+}
+
+#main #map #lichuan:hover {
+    top: 35%;
+}
+
+#main #map #enshi {
+    width: 16.8%;
+    height: 31%;
+    top: 35%;
+    left: 40%;
+}
+
+#main #map #enshi:hover {
+    top: 33%;
+}
+
+#main #map #xianfeng {
+    width: 13.8%;
+    height: 29%;
+    top: 60.4%;
+    left: 29.5%;
+}
+
+#main #map #xianfeng:hover {
+    top: 58.4%;
+}
+
+#main #map #xuanen {
+    width: 12.8%;
+    height: 24%;
+    top: 54%;
+    left: 42.4%;
+}
+
+#main #map #xuanen:hover {
+    top: 52%;
+}
+
+#main #map #laifeng {
+    width: 8.7%;
+    height: 22%;
+    top: 77.8%;
+    left: 38.8%;
+}
+
+#main #map #laifeng:hover {
+    top: 75.8%;
+}
+
+#main #map #jianshi {
+    width: 13.05%;
+    height: 31%;
+    top: 23%;
+    left: 49.4%;
+}
+
+#main #map #jianshi:hover {
+    top: 21%;
+}
+
+#main #map #badong {
+    width: 8.7%;
+    height: 47%;
+    top: 1.7%;
+    left: 61.6%;
+}
+
+#main #map #badong:hover {
+    top: 0;
+}
+
+#main #map #hefeng {
+    width: 15.66%;
+    height: 22%;
+    top: 52%;
+    left: 54.4%;
+}
+
+#main #map #hefeng:hover {
+    top: 50%;
+}
+
+
+/* 榜单页 */
+
+#chara,
+#tour {
+    padding-top: 90px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/R-C11.jpg);
+    background-size: cover;
+}
+
+#chara .title,
+#tour .title {
+    width: 100%;
+    /* height: 80px; */
+    height: 10%;
+    text-align: center;
+}
+
+#chara .title h1,
+#tour .title h1 {
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    font-family: "楷体";
+}
+
+#chara .title h1:nth-child(1),
+#tour .title h1:nth-child(1) {
+    font-size: 32px;
+}
+
+#tour .title h1:nth-child(2) {
+    font-size: 36px;
+}
+
+#tour .intro {
+    margin: 20px auto 0;
+    width: 800px;
+    height: 6%;
+}
+
+#tour .intro p {
+    font-size: 14px;
+    text-align: center;
+    text-indent: 2em;
+}
+
+#tour .site {
+    margin: 24px auto 0;
+    width: 800px;
+    height: 10%;
+    text-align: center;
+}
+
+#tour .site span {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#tour .scenery {
+    margin: 2% auto;
+    width: 1080px;
+    height: 60%;
+}
+
+#tour .scenery ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#tour .scenery ul li {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#tour .scenery ul li:nth-child(odd) {
+    transform: translateY(-100%);
+}
+
+#tour .scenery ul li:nth-child(even) {
+    transform: translateY(100%);
+}
+
+#tour .scenery ul li:nth-child(5) {
+    margin-right: 0;
+}
+
+#tour .scenery ul li .mapTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+}
+
+#tour .scenery ul li .tone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border: 18px solid #000;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: transparent;
+    border-left-color: rgba(255, 255, 255, .5);
+    border-right-color: transparent;
+    opacity: 1;
+    z-index: 3;
+}
+
+#tour .scenery ul li .tone::after {
+    font-family: 'icomoon';
+    content: "\e9cb";
+    position: absolute;
+    top: -20px;
+    left: -18px;
+    font-size: 16px;
+    color: rgba(43, 116, 91, 1);
+}
+
+#tour .scenery ul li .mapTitle .zhishu {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#tour .scenery ul li .mapTitle .zhishu span {
+    position: absolute;
+    top: 36px;
+    padding-top: 6px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+#tour .scenery ul li .mapTitle .zhishu span:nth-child(2) {
+    top: 58px;
+}
+
+#tour .scenery ul li .mapTitle h1 {
+    width: 100%;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+#tour .scenery ul li:nth-child(5) {
+    margin-right: 0;
+}
+
+#tour .scenery ul li .mapimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../image/engao.jpg);
+    background-position-x: center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.8s;
+}
+
+#tour .scenery ul li:nth-child(2) .mapimg {
+    background-image: url(../image/hexia.jpg);
+}
+
+#tour .scenery ul li:nth-child(3) .mapimg {
+    background-image: url(../image/endi.jpg);
+}
+
+#tour .scenery ul li:nth-child(4) .mapimg {
+    background-image: url(../image/enteng.jpg);
+}
+
+#tour .scenery ul li:nth-child(5) .mapimg {
+    background-image: url(../image/entu.jpg);
+}
+
+#tour .scenery ul li .mapImgIntro {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(4, 60, 41, 0.1);
+    /*  background-image: url(../image/pic5.jpeg);
+    background-position-x: center;
+    background-size: cover; */
+}
+
+#tour .scenery ul li .mapImgIntro .mapImgIntroH1 {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+#tour .scenery ul li .mapImgIntro .mapImgIntroH1 h4 {
+    font-size: 14px;
+    text-indent: 2em;
+    font-weight: 400;
+}
+
+#tour .scenery ul li .mapImgIntro .mapImgIntroOther {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+#tour .scenery ul li .mapImgIntro .mapImgIntroOther p,
+#tour .scenery ul li .mapImgIntro .mapImgIntroOther h4 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 24px;
+}
+
+
+/* #tour .scenery ul li .mapImgIntro .mapImgIntroOther h4 {
+    line-height: 100%;
+} */
+
+
+/* #tour .scenery ul li img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    transform: translate(-50%, 0);
+}
+ */
+
+
+/* 民俗页 */
+
+#chara {
+    background-image: url(../image/R-C4.jpg);
+}
+
+#chara .charaImg {
+    width: 900px;
+    height: 30%;
+    margin: 18px auto;
+    overflow: hidden;
+}
+
+#chara .charaImg img {
+    display: block;
+    float: left;
+    width: 450px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#chara .charaImg img:nth-child(2) {
+    transform: translateX(100%);
+}
+
+#chara .folk {
+    margin: 0 auto;
+    width: 900px;
+    height: 50%;
+}
+
+#chara .folk ul {
+    width: 100%;
+    height: 100%;
+}
+
+#chara .folk ul li {
+    width: 150px;
+    height: 100%;
+    float: left;
+    background-color: #ccc;
+    transition: all 0.5s;
+}
+
+#chara .folk ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url();
+    background-position-x: center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+#chara .folk ul li a .folkTxt {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    width: 36px;
+    height: 120px;
+    transform: translateY(-70%);
+}
+
+#chara .folk ul li a .folkTxt h1 {
+    width: 36px;
+    height: 100%;
+    font-family: "楷体";
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#chara .folk ul li a .folkTxt h1::after {
+    font-family: 'icomoon';
+    content: '\e9d2';
+    color: #fff;
+}
+
+
+/* 视频intro */
+
+#mainor {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/R-C5.jpg);
+    background-size: cover;
+}
+
+#mainor .mp4 {
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+}
+
+#mainor .mp4 .lxh {
+    width: 98%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
+
+#mainor .mp4 video {
+    width: 100%;
+}
+
+#mainor .mp4Intro {
+    padding: 16px 24px;
+    width: 100%;
+    height: 100%;
+    transition: all 2.5s;
+    float: left;
+    border: none;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+#mainor .mp4Intro p {
+    width: 100%;
+    height: 100%;
+    text-indent: 2em;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.scrollstyle {
+    width: 2%;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.lxh::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.lxh::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 0 10px 10px 0;
+    -webkit-box-shadow: inset 0 0 5px rgba(43, 116, 91, 0.3);
+    background: #535353;
+}
+
+.lxh::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(43, 116, 91, 1);
+    border-radius: 0 10px 10px 0;
+    background: #EDEDED;
+}
+
+#mainor footer {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+
+/* 置顶 */
+
+
+/* @media only screen and (max-width: 1000px) {
+    #main header #nav .nav {
+        position: absolute;
+        top: 0px;
+        right: 35px;
+        width: 70px;
+        height: 540px;
+        transition: all 0.5s;
+    }
+    #main header #nav .nav li {
+        width: 72px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    #main #map {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120%;
+        height: 70%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #main #map {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        width: 120%;
+        height: 70%;
+        transform: translate(0, -50%);
+        transition: all 0.5s;
+    }
+    #tour .site span {
+        display: inline;
+    }
+    #tour .site span:nth-child(4) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #main {
+        background-image: url(../image/手机1.png);
+        background-size: cover;
+        transition: all 0.5s;
+    }
+    #main #map {
+        position: absolute;
+        top: 50%;
+        left: -30%;
+        width: 150%;
+        height: 70%;
+        transform: translate(0, -50%);
+        transition: all 0.5s;
+    }
+    #chara .title,
+    #tour .title {
+        width: 100%;
+        height: 12%;
+    }
+    #tour .intro {
+        width: 100%;
+        height: 20%;
+    }
+    #tour .site {
+        margin: 0;
+        width: 100%;
+        height: 6%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #main #map {
+        position: absolute;
+        top: 50%;
+        left: -30%;
+        width: 150%;
+        height: 70%;
+        transform: translate(0, -50%);
+        transition: all 0.5s;
+    }
+    #chara .title h1,
+    #tour .title h1 {
+        width: 100%;
+        line-height: 50px;
+    }
+    #tour .scenery {
+        width: 100%;
+        height: 60%;
+    }
+    #tour .scenery ul li {
+        width: 20%;
+        height: 100%;
+        margin: 0;
+        border: 1px #ccc solid;
+    }
+    #chara .charaImg {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #chara .charaImg img:nth-child(2) {
+        display: none;
+    }
+    #chara .folk ul {
+        width: 100%;
+    }
+    #chara .folk ul li {
+        width: 100%;
+        height: 19.9%;
+        border: 1px #ccc solid;
+    }
+    #chara .folk ul li:nth-child(1) {
+        width: 100%;
+    }
+    #mainor .mp4 {
+        margin: 0 auto;
+        width: 100%;
+    }
+} */
